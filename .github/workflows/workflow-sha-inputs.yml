@@ -16,4 +16,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Execute
-        run: echo "${{ inputs.sha }}"
+        run: echo ${{ github.event.inputs.sha }}"
