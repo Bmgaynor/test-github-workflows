@@ -1,4 +1,4 @@
-name: Deploy to Production (Force)
+name: Workflow SHA Inputs
 
 on: [workflow_dispatch]
 
