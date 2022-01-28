@@ -15,4 +15,3 @@ jobs:
 
       - name: Execute
         run: echo "${{ steps.vars.outputs.sha_short }}"
-e
