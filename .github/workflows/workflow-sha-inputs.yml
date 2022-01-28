@@ -16,4 +16,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Execute
-        run: echo "${{ workflow.inputs.sha }}"
+        run: echo "${{ inputs.sha }}"
