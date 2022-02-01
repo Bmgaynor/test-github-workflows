@@ -11,9 +11,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      SHA: ${{ github.event.inputs.sha }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
       - name: Execute
-        run: echo ${{ github.event.inputs.sha }}
+        run: echo executing $SHA
