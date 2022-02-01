@@ -12,10 +12,10 @@ jobs:
           exit 1
       - name: Does this still run
         run: |
-          echo "This should not run"
+          echo "if this runs we have a problem"
           exit 1
       - name:
         if: ${{ success() }}
         run: |
-          echo "this might run"
+          echo "if this runs then we really have problem"
           exit 0
