@@ -1,0 +1,21 @@
+name: Workflow Test If Success
+
+on: push
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Exit
+        run: |
+          echo "exiting with non (success)"
+          exit 1
+      - name: Does this still run
+        run: |
+          echo "This should not run"
+          exit 1
+      - name:
+        if: ${{ success() }}
+        run: |
+          echo "this might run"
+          exit 0
